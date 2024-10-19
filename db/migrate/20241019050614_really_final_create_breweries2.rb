@@ -1,8 +1,8 @@
-class CreateBreweries < ActiveRecord::Migration[7.1]
+class ReallyFinalCreateBreweries2 < ActiveRecord::Migration[7.1]
   def change
     create_table :breweries do |t|
       t.string :name
-      t.string :type
+      t.string :bar_type
       t.string :address
       t.string :state
       t.decimal :lat, precision: 8, scale: 6
