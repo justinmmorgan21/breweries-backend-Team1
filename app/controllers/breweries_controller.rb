@@ -38,7 +38,7 @@ class BreweriesController < ApplicationController
     # p "Params"
     # p params[:coordinates]
     @breweries = Brewery.closest(Brewery.all, params[:coordinates])
-    # p @breweries
+    p @breweries
     render :index
   end
 
